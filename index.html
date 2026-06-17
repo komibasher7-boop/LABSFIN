@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LabsFin.com | Premium Fintech Digital Asset</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #10b981;
+        }
+        body { 
+            font-family: 'Plus Jakarta Sans', 'Inter', sans-serif; 
+            background-color: #020617;
+            overflow-x: hidden;
+        }
+        .glass {
+            background: rgba(15, 23, 42, 0.65);
+            backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .video-overlay {
+            background: linear-gradient(to bottom, rgba(2, 6, 23, 0.8), rgba(2, 6, 23, 0.4), rgba(2, 6, 23, 0.8));
+        }
+        .text-gradient {
+            background: linear-gradient(to right, #fff, #94a3b8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        @keyframes pulse-soft {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.7; }
+        }
+        .animate-pulse-soft { animation: pulse-soft 3s infinite; }
+    </style>
+</head>
+<body class="text-slate-200 min-h-screen">
+
+    <!-- Background Video Wrapper -->
+    <div class="fixed inset-0 z-0">
+        <video autoplay muted loop playsinline class="w-full h-full object-cover">
+            <source src="https://cdn.pixabay.com/video/2020/09/24/50543-462319044_large.mp4" type="video/mp4">
+        </video>
+        <div class="absolute inset-0 video-overlay z-10"></div>
+    </div>
+
+    <!-- Content Container -->
+    <main class="relative z-20 min-h-screen flex flex-col items-center justify-center p-6 md:p-12">
+        
+        <div class="max-w-5xl w-full">
+            <!-- Main Card -->
+            <div class="glass rounded-[3rem] overflow-hidden shadow-2xl transition-all duration-500 hover:border-emerald-500/30">
+                <div class="p-8 md:p-20 text-center">
+                    
+                    <!-- Status Badge -->
+                    <div class="inline-flex items-center gap-3 px-5 py-2 rounded-full bg-emerald-500/20 border border-emerald-500/30 text-emerald-400 text-xs font-bold mb-10 tracking-widest uppercase">
+                        <span class="relative flex h-3 w-3">
+                            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                            <span class="relative inline-flex rounded-full h-3 w-3 bg-emerald-500"></span>
+                        </span>
+                        Domain Available for Acquisition
+                    </div>
+
+                    <!-- Domain Name -->
+                    <h1 class="text-6xl md:text-9xl font-extrabold tracking-tighter mb-8 group">
+                        <span class="text-white transition-colors group-hover:text-emerald-400">Labs</span><span class="text-emerald-500">Fin</span><span class="text-slate-500">.com</span>
+                    </h1>
+                    
+                    <!-- Description -->
+                    <div class="max-w-2xl mx-auto mb-12">
+                        <p class="text-xl md:text-2xl text-slate-300 leading-relaxed font-light">
+                            The ultimate digital destination for the future of <span class="text-white font-bold tracking-tight">FinTech Innovation</span>, quantitative research, and financial data analytics.
+                        </p>
+                    </div>
+
+                    <!-- Metrics Grid -->
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
+                        <div class="p-4 rounded-2xl bg-white/5 border border-white/5 hover:bg-white/10 transition-colors">
+                            <div class="text-emerald-500 text-[10px] uppercase tracking-widest mb-1">Sector</div>
+                            <div class="font-bold text-lg">FinTech</div>
+                        </div>
+                        <div class="p-4 rounded-2xl bg-white/5 border border-white/5 hover:bg-white/10 transition-colors">
+                            <div class="text-emerald-500 text-[10px] uppercase tracking-widest mb-1">Extension</div>
+                            <div class="font-bold text-lg">.Com</div>
+                        </div>
+                        <div class="p-4 rounded-2xl bg-white/5 border border-white/5 hover:bg-white/10 transition-colors">
+                            <div class="text-emerald-500 text-[10px] uppercase tracking-widest mb-1">Length</div>
+                            <div class="font-bold text-lg">7 Chars</div>
+                        </div>
+                        <div class="p-4 rounded-2xl bg-white/5 border border-white/5 hover:bg-white/10 transition-colors">
+                            <div class="text-emerald-500 text-[10px] uppercase tracking-widest mb-1">Status</div>
+                            <div class="font-bold text-lg">Premium</div>
+                        </div>
+                    </div>
+
+                    <!-- CTA Actions -->
+                    <div class="flex flex-col md:flex-row items-center justify-center gap-6">
+                        <a href="https://dan.com/buy-domain/labsfin.com" class="w-full md:w-auto bg-emerald-600 hover:bg-emerald-500 text-white px-12 py-6 rounded-2xl font-bold text-xl transition-all shadow-2xl shadow-emerald-900/40 hover:scale-105 flex items-center justify-center gap-3">
+                            <span>Buy Securely Now</span>
+                        </a>
+                        <a href="mailto:broker@labsfin.com" class="w-full md:w-auto bg-slate-800/80 hover:bg-slate-700 text-white px-12 py-6 rounded-2xl font-bold text-xl transition-all border border-slate-600 backdrop-blur flex items-center justify-center">
+                            Contact Broker
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Trust Bar -->
+                <div class="bg-black/40 p-5 flex flex-wrap items-center justify-center gap-8 border-t border-white/10 text-xs text-slate-400 uppercase tracking-widest">
+                    <span class="flex items-center gap-2">
+                        <svg class="w-4 h-4 text-emerald-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+                        Secure Escrow Transfer
+                    </span>
+                    <span class="flex items-center gap-2">
+                        <svg class="w-4 h-4 text-emerald-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                        Instant Domain Delivery
+                    </span>
+                    <span class="flex items-center gap-2">
+                        <svg class="w-4 h-4 text-emerald-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        Verified Asset
+                    </span>
+                </div>
+            </div>
+
+            <!-- Detailed Use Cases -->
+            <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="p-8 rounded-3xl glass border border-white/5 group hover:bg-emerald-500/5 transition-all">
+                    <h3 class="text-emerald-400 font-bold mb-4 text-lg uppercase tracking-tight">Innovation Labs</h3>
+                    <p class="text-sm text-slate-400 leading-relaxed">
+                        Ideal for financial research centers developing trading algorithms, proprietary software, and financial AI solutions.
+                    </p>
+                </div>
+                <div class="p-8 rounded-3xl glass border border-white/5 group hover:bg-emerald-500/5 transition-all">
+                    <h3 class="text-emerald-400 font-bold mb-4 text-lg uppercase tracking-tight">Digital Banking</h3>
+                    <p class="text-sm text-slate-400 leading-relaxed">
+                        A high-authority brand name for neobanks, mobile payment processors, or modern retail investment platforms.
+                    </p>
+                </div>
+                <div class="p-8 rounded-3xl glass border border-white/5 group hover:bg-emerald-500/5 transition-all">
+                    <h3 class="text-emerald-400 font-bold mb-4 text-lg uppercase tracking-tight">Data Analytics</h3>
+                    <p class="text-sm text-slate-400 leading-relaxed">
+                        Perfect for B2B firms providing deep market sentiment analytics, automated reporting, and fiscal forecasting.
+                    </p>
+                </div>
+            </div>
+
+            <footer class="mt-20 text-center">
+                <p class="text-slate-500 text-[10px] tracking-[0.3em] uppercase mb-4">Certified Premium Digital Asset</p>
+                <div class="h-px w-20 bg-emerald-500/30 mx-auto mb-8"></div>
+                <p class="text-slate-600 text-xs">© 2024 LabsFin.com | Managed by Elite Domain Brokers</p>
+            </footer>
+        </div>
+    </main>
+
+</body>
+</html>
