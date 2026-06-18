@@ -1,153 +1,111 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LabsFin.com | Premium Fintech Domain Acquisition</title>
+    <title>LabsFin.com | Premium FinTech Acquisition</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #030712; }
-        .glass-effect {
-            background: rgba(17, 24, 39, 0.7);
-            backdrop-filter: blur(12px);
-            border: 1px solid rgba(255, 255, 255, 0.1);
+        body {
+            background-color: #050505;
+            color: #e5e5e5;
+            font-family: 'Inter', sans-serif;
+            overflow: hidden;
         }
-        .gradient-text {
-            background: linear-gradient(135deg, #34d399 0%, #22d3ee 100%);
+        .serif-title {
+            font-family: 'Playfair Display', serif;
+        }
+        .luxury-gradient {
+            background: radial-gradient(circle at center, #111 0%, #050505 100%);
+        }
+        .gold-text {
+            background: linear-gradient(to right, #bf953f, #fcf6ba, #b38728, #fbf5b7, #aa771c);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
-        .animate-float {
-            animation: float 6s ease-in-out infinite;
+        .noise {
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            pointer-events: none;
+            opacity: .03;
+            z-index: 999;
+            background-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg"><filter id="noiseFilter"><feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" stitchTiles="stitch"/></filter><rect width="100%" height="100%" filter="url(%23noiseFilter)"/></svg>');
         }
-        @keyframes float {
-            0%, 100% { transform: translateY(0px); }
-            50% { transform: translateY(-20px); }
+        .reveal {
+            animation: reveal 1.2s cubic-bezier(0.77, 0, 0.175, 1) forwards;
         }
-        .grid-pattern {
-            background-image: radial-gradient(rgba(52, 211, 153, 0.1) 1px, transparent 1px);
-            background-size: 30px 30px;
-        }
-        .cta-glow {
-            box-shadow: 0 0 20px rgba(52, 211, 153, 0.3);
+        @keyframes reveal {
+            0% { transform: translateY(20px); opacity: 0; }
+            100% { transform: translateY(0); opacity: 1; }
         }
     </style>
 </head>
-<body class="text-slate-300 min-h-screen overflow-x-hidden grid-pattern">
+<body class="luxury-gradient min-h-screen flex flex-col justify-between">
+    <div class="noise"></div>
 
-    <!-- Top Glow -->
-    <div class="fixed top-0 left-1/2 -translate-x-1/2 w-full max-w-4xl h-96 bg-emerald-500/20 blur-[120px] rounded-full pointer-events-none"></div>
+    <!-- Top Status -->
+    <nav class="relative z-10 flex justify-between items-center px-8 py-8 max-w-7xl mx-auto w-full">
+        <div class="text-[10px] tracking-[0.5em] font-light text-neutral-600 uppercase">
+            Asset: LabsFin.com
+        </div>
+        <div class="flex items-center gap-3">
+            <div class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></div>
+            <span class="text-[10px] tracking-widest uppercase text-emerald-500 font-bold">Verified Available</span>
+        </div>
+    </nav>
 
-    <div class="relative z-10 max-w-7xl mx-auto px-6 py-8">
-        <!-- Navigation -->
-        <nav class="flex justify-between items-center mb-16 lg:mb-24">
-            <div class="flex items-center gap-3">
-                <div class="w-10 h-10 bg-gradient-to-br from-emerald-400 to-cyan-500 rounded-xl flex items-center justify-center shadow-lg shadow-emerald-500/20">
-                    <svg class="w-6 h-6 text-slate-900" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/></svg>
-                </div>
-                <span class="text-2xl font-extrabold tracking-tight text-white">LabsFin<span class="text-emerald-400">.com</span></span>
+    <!-- Main Content -->
+    <main class="relative z-10 flex-grow flex items-center justify-center">
+        <div class="text-center px-6">
+            <div class="reveal mb-4">
+                <span class="text-neutral-500 text-xs tracking-[0.4em] uppercase">Premium Digital Real Estate</span>
             </div>
-            <div class="hidden md:flex gap-8 text-sm font-semibold uppercase tracking-widest text-slate-400">
-                <span class="flex items-center gap-2"><span class="w-2 h-2 bg-emerald-500 rounded-full animate-pulse"></span> Available for Transfer</span>
-                <span>Premium Fintech Asset</span>
-            </div>
-        </nav>
-
-        <main class="grid lg:grid-cols-12 gap-12 items-center">
-            <!-- Left Side -->
-            <div class="lg:col-span-7 space-y-8 text-center lg:text-left">
-                <div>
-                    <span class="inline-block px-4 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-bold uppercase tracking-widest mb-6">
-                        Exclusively listed on Afternic
-                    </span>
-                    <h1 class="text-5xl lg:text-8xl font-extrabold text-white leading-[1.1] mb-6 tracking-tight">
-                        Elevate Your <br/>
-                        <span class="gradient-text">Financial Vision.</span>
-                    </h1>
-                    <p class="text-xl text-slate-400 max-w-2xl leading-relaxed mx-auto lg:mx-0">
-                        <strong>LabsFin.com</strong> is a high-tier digital asset tailored for venture studios, fintech incubators, and modern financial platforms. Secure it today before it's gone.
-                    </p>
-                </div>
-
-                <div class="flex flex-col sm:flex-row gap-5 justify-center lg:justify-start">
-                    <a href="https://www.afternic.com/domains/Labsfin.com/details" target="_blank" class="px-10 py-5 bg-emerald-500 hover:bg-emerald-400 text-slate-950 rounded-2xl font-extrabold text-xl transition-all transform hover:-translate-y-1 cta-glow flex items-center justify-center gap-3">
-                        Acquire via Afternic
-                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
-                    </a>
-                    <a href="https://www.afternic.com/domains/Labsfin.com/details" target="_blank" class="px-10 py-5 bg-slate-800/50 hover:bg-slate-800 text-white rounded-2xl font-extrabold text-xl border border-slate-700 transition-all text-center">
-                        Contact Broker
-                    </a>
-                </div>
-
-                <div class="grid grid-cols-3 gap-8 pt-8 border-t border-slate-800/50">
-                    <div>
-                        <div class="text-3xl font-bold text-white mb-1">7</div>
-                        <div class="text-slate-500 text-sm font-semibold uppercase tracking-wider">Letters</div>
-                    </div>
-                    <div>
-                        <div class="text-3xl font-bold text-white mb-1">.com</div>
-                        <div class="text-slate-500 text-sm font-semibold uppercase tracking-wider">Top TLD</div>
-                    </div>
-                    <div>
-                        <div class="text-3xl font-bold text-white mb-1">Immediate</div>
-                        <div class="text-slate-500 text-sm font-semibold uppercase tracking-wider">Transfer</div>
-                    </div>
-                </div>
+            
+            <div class="reveal" style="animation-delay: 0.1s;">
+                <h1 class="serif-title text-7xl md:text-9xl text-white leading-tight mb-8">
+                    Labs<span class="gold-text italic">Fin</span><span class="text-neutral-800">.com</span>
+                </h1>
             </div>
 
-            <!-- Right Side: The Card -->
-            <div class="lg:col-span-5 relative">
-                <div class="absolute -inset-4 bg-emerald-500/20 rounded-[3rem] blur-3xl"></div>
-                <div class="glass-effect relative rounded-[2.5rem] p-10 border border-white/10 shadow-2xl animate-float">
-                    <div class="flex justify-between items-start mb-12">
-                        <div>
-                            <p class="text-emerald-400 text-xs font-bold uppercase tracking-widest mb-2">Verified Listing</p>
-                            <h2 class="text-4xl font-bold text-white tracking-tight">LabsFin.com</h2>
-                        </div>
-                        <div class="w-14 h-14 rounded-full border border-emerald-500/30 flex items-center justify-center">
-                            <svg class="w-8 h-8 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
-                        </div>
-                    </div>
-
-                    <div class="space-y-6 mb-12">
-                        <div class="p-4 bg-white/5 rounded-2xl border border-white/5">
-                            <p class="text-sm text-slate-400 mb-1">Transfer Protocol</p>
-                            <p class="text-white font-bold">Fast Transfer Available via Afternic</p>
-                        </div>
-                        <div class="p-4 bg-white/5 rounded-2xl border border-white/5">
-                            <p class="text-sm text-slate-400 mb-1">Ownership Rights</p>
-                            <p class="text-white font-bold">Full Intellectual Property Transfer</p>
-                        </div>
-                        <div class="p-4 bg-white/5 rounded-2xl border border-white/5">
-                            <p class="text-sm text-slate-400 mb-1">Transaction Security</p>
-                            <p class="text-white font-bold">100% Secure Escrow Service</p>
-                        </div>
-                    </div>
-
-                    <a href="https://www.afternic.com/domains/Labsfin.com/details" target="_blank" class="block w-full py-4 bg-white text-slate-950 text-center rounded-xl font-extrabold hover:bg-emerald-50 transition-colors">
-                        Secure This Domain
-                    </a>
-
-                    <div class="mt-8 text-center">
-                        <p class="text-xs text-slate-500 font-bold uppercase tracking-widest mb-4">Official Transaction Partner</p>
-                        <div class="flex justify-center items-center gap-4 opacity-50 grayscale hover:grayscale-0 hover:opacity-100 transition-all">
-                             <img src="https://upload.wikimedia.org/wikipedia/commons/e/e0/GoDaddy_logo.svg" class="h-5 invert" alt="GoDaddy">
-                             <span class="text-white font-black italic text-lg">AFTERNIC</span>
-                        </div>
-                    </div>
-                </div>
+            <div class="reveal" style="animation-delay: 0.2s;">
+                <p class="max-w-xl mx-auto text-lg text-neutral-400 font-light mb-12">
+                    The ultimate identity for high-end <span class="text-white">FinTech</span> and <span class="text-white">Financial Labs</span>.
+                </p>
             </div>
-        </main>
 
-        <footer class="mt-32 pt-8 border-t border-slate-800/50 flex flex-col md:flex-row justify-between items-center gap-6">
-            <p class="text-slate-500 text-sm">© 2024 LabsFin.com. All Rights Reserved. Domain listed exclusively on Afternic network.</p>
-            <div class="flex gap-8 text-sm font-semibold text-slate-400">
-                <a href="https://www.afternic.com/domains/Labsfin.com/details" class="hover:text-emerald-400 transition-colors">Secure Checkout</a>
-                <a href="https://www.afternic.com/domains/Labsfin.com/details" class="hover:text-emerald-400 transition-colors">Transfer FAQ</a>
+            <div class="reveal" style="animation-delay: 0.3s;">
+                <a href="https://www.afternic.com/domains/Labsfin.com" target="_blank" class="inline-block group relative px-16 py-6 bg-white text-black font-bold text-sm tracking-widest overflow-hidden transition-all duration-300 hover:bg-neutral-200">
+                    ACQUIRE DOMAIN
+                </a>
             </div>
-        </footer>
-    </div>
+        </div>
+    </main>
 
+    <!-- Essential Stats Only -->
+    <footer class="relative z-10 w-full py-12 border-t border-neutral-900/50">
+        <div class="max-w-4xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+            <div>
+                <p class="text-[10px] text-neutral-600 uppercase tracking-tighter mb-1">Extension</p>
+                <p class="text-xs font-bold text-neutral-300">.COM</p>
+            </div>
+            <div>
+                <p class="text-[10px] text-neutral-600 uppercase tracking-tighter mb-1">Type</p>
+                <p class="text-xs font-bold text-neutral-300">Premium FinTech</p>
+            </div>
+            <div>
+                <p class="text-[10px] text-neutral-600 uppercase tracking-tighter mb-1">Length</p>
+                <p class="text-xs font-bold text-neutral-300">7 Characters</p>
+            </div>
+            <div>
+                <p class="text-[10px] text-neutral-600 uppercase tracking-tighter mb-1">Transfer</p>
+                <p class="text-xs font-bold text-neutral-300">Instant / Secure</p>
+            </div>
+        </div>
+        
+        <div class="mt-12 text-[9px] text-neutral-800 tracking-[0.5em] uppercase text-center">
+            Secure Transaction via Escrow | LabsFin.com
+        </div>
+    </footer>
 </body>
 </html>
